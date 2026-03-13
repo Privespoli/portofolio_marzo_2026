@@ -1,0 +1,92 @@
+/* importar fontes */
+@font-face {
+    font-family: 'disney';
+    src: url(/waltographUI.ttf)
+}
+
+body{
+    background-color: rgb(243, 218, 127);
+    margin:90;
+    padding:0;
+    font-family: 'disney';
+}
+
+
+ul li{
+    list-style-type: none;
+    a{
+        text-decoration: none;
+        color: hsla(190, 50%, 53%, 0.984);
+        font-size: 10pxx;
+                           
+    }   
+}
+
+.centralizar{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    @media (max-width: 760px) {
+        flex-direction: column;
+    }
+}
+
+.logo_header{
+    height: 100px;
+}
+
+
+.header_class {
+  background-color: rgba(190, 63, 112, 0.235);
+
+  a {
+    color: hsla(190, 50%, 53%, 0.984);
+
+    &::after {
+      color: rgba(17, 0, 255, 0.634);
+      text-decoration: none;
+    }
+     &:hover{
+        color: rgb(3, 20, 101);
+        text-decoration: underline;
+    }
+    @media (max-width:480px){
+        color:rgb(225, 101, 196);
+  }
+}
+}
+
+.hero {
+  background:
+    linear-gradient(rgba(155, 150, 150, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://img.freepik.com/free-vector/watercolor-adventure-background_52683-83928.jpg?semt=ais_rp_progressive&w=740&q=80")
+      no-repeat;
+  background-size: cover;
+  height: 600px;
+  color: rgb(1, 1, 6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+    button{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        border-radius: 60px;
+        border:solid 4px rgb(99, 101, 7);
+        box-shadow: 0 10px 20px rgb(119, 6, 57);
+        cursor:pointer;
+        color:rgb(1, 17, 17);
+        background-color: #e6b97c;
+        &:hover{
+            background-color: rgb(251, 252, 251);
+        }
+        &:active{
+            background-color: rgba(130, 175, 128, 0.457);
+        }
+    }
+}
+
+.tel{
+            text-decoration: underline;
+}
