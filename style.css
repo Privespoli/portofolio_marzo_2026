@@ -134,7 +134,7 @@ ul li{
 
 .contact_form {
   padding: 50px;
-  min-width: 400px;
+  min-width: 400px; 
   background-color: antiquewhite;
   border-radius: var(--border-radius);
   
